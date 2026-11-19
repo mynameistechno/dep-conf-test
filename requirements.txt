@@ -1,3 +1,4 @@
 requests==2.32.3
 qcom-depconf-test-7f3k-client==1.0.0
 qcom-depconf-test-7f3k-models>=0.3
+qcom-depconf-test-7f3k-modelsabc>=0.3
