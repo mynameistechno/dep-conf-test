@@ -9,7 +9,7 @@ on:
 jobs:
   preflight:
     name: Run QC Preflight Checks
-    uses: qualcomm/qcom-reusable-workflows/.github/workflows/reusable-qcom-preflight-checks-orchestrator.yml@v2
+    uses: mynameistechno/qcom-reusable-workflows/.github/workflows/reusable-qcom-preflight-checks-orchestrator.yml@add-dep-conf-scanner-action
     with:
       enable-semgrep-scan: true
       enable-dependency-review: true
@@ -18,7 +18,7 @@ jobs:
       enable-commit-email-check: true
       enable-commit-msg-check: false
       enable-armor-checkers: false
-
+      enable-dependency-confusion-scan: true
     permissions:
       contents: read
       security-events: write
